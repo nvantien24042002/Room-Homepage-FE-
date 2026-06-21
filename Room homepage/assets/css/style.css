@@ -21,7 +21,6 @@ ul {
 
 /* --- HEADER --- */
 /* HEADER - MOBILE FIRST */
-
 .site-header {
     width: 100%;
     background-color: var(--orange);
@@ -54,7 +53,54 @@ ul {
     align-items: center;
 }
 /* Navigation - mobile default hidden */
-
+/* =========================
+    MOBILE MENU OPEN STATE
+========================= */
 .site-header__nav {
+    position: absolute;
+    inset: 0;
     display: none;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding-inline: var(--space-200);
+}
+.site-header.is-open .site-header__nav {
+    display: flex;
+}
+.site-header.is-open .site-header__hamburger,
+.site-header.is-open .site-header__logo {
+    display: none;
+}
+/* menu links */
+.site-header__links {
+    display: flex;
+    align-items: center;
+    gap: var(--space-300);
+}
+.site-header__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-100);
+    padding-block-start: var(--space-100);
+}
+.site-header__item::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background-color: aqua;
+    transition: all 0.2s ease-in-out;
+}
+.site-header__item:hover::after,
+.site-header__item:focus-within::after {
+    width: var(--space-400);
+    background-color: var(--black);
+
+}
+.site-header__link {
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 600;
 }
