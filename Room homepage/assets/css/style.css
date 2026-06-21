@@ -23,8 +23,12 @@ ul {
 /* HEADER - MOBILE FIRST */
 .site-header {
     width: 100%;
-    background-color: var(--orange);
-    position: relative;
+    /* background-color: var(--orange); */
+    background-color: transparent;
+    /* position: relative; */
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 999;
 }
 .site-header__inner {
@@ -183,10 +187,6 @@ ul {
 }
 /* TABLET RESPONSIVE  */
 @media (min-width: 768px) {
-    .site-header {
-        background-color: var(--orange);
-    }
-
     .site-header__inner {
         justify-content: flex-start;
         gap: var(--space-700);
