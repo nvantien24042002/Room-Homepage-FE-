@@ -179,11 +179,28 @@ ul {
     justify-content: space-between;
 }
 .about__link {
+    color: var(--black);
+    text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 0.5rem;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    letter-spacing: 0.75rem;
+    transition: all 0.2s ease-in-out;
 }
 .about__arrow {
     flex-shrink: 0;
+}
+
+.about__arrow path {
+    transition: fill 200ms ease;
+}
+
+.about-cta:hover .about__link {
+    color: var(--grey-500);
+}
+
+.about-cta:hover .about__arrow path {
+    fill: var(--grey-500);
 }
 /* TABLET RESPONSIVE  */
 @media (min-width: 768px) {
