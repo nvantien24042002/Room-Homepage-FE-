@@ -12,4 +12,8 @@
     --space-1000: 5rem;
     --space-1375: 6.875rem;
     --font: 'League Spartan', sans-serif;
+    --text-sm: 0.9375rem; /* 15px */
+    --text-md: 1rem;      /* 16px */
+    --text-lg: 2.5rem;    /* 40px */
+    --text-xl: 3rem;      /* 48px */
 }

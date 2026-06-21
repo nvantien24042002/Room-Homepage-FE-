@@ -105,6 +105,75 @@ ul {
     font-size: 1rem;
     font-weight: 600;
 }
+/* =========================
+    ABOUT / HERO SECTION - MOBILE
+========================= */
+.about {
+    background-color: var(--white);
+}
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+/* images */
+.about__media {
+    position: relative;
+}
+.about__image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.slider {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+.slider__previous,
+.slider__next {
+    border: none;
+    background-color: var(--black);
+    cursor: pointer;
+    padding: var(--space-300);
+}
+.slider__previous img,
+.slider__next img {
+    display: block;
+    width: var(--space-200);
+    height: auto;
+}
+/* content */
+.about-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-400);
+    padding: var(--space-800) var(--space-300);
+    color: var(--black);
+}
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-200);
+}
+.about-content__title {
+    font-size: var(--text-lg);
+}
+.about-content__text {
+    font-size: var(--text-md);
+}
+.about-cta {
+    display: flex;
+    justify-content: space-between;
+}
+.about__link {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+.about__link:hover {
+    color: grey;
+}
 /* TABLET RESPONSIVE  */
 @media (min-width: 768px) {
     .site-header {
