@@ -137,6 +137,11 @@ ul {
     background-color: var(--black);
     cursor: pointer;
     padding: var(--space-300);
+    transition: background-color 200ms ease;
+}
+.slider__previous:hover,
+.slider__next:hover{
+    background-color:var(--grey-800);
 }
 .slider__previous img,
 .slider__next img {
@@ -162,6 +167,8 @@ ul {
 }
 .about-content__text {
     font-size: var(--text-md);
+    line-height: 1.45;
+    font-weight: 500;
 }
 .about-cta {
     display: flex;
@@ -171,8 +178,8 @@ ul {
     text-transform: uppercase;
     letter-spacing: 0.5rem;
 }
-.about__link:hover {
-    color: grey;
+.about__arrow {
+    flex-shrink: 0;
 }
 /* TABLET RESPONSIVE  */
 @media (min-width: 768px) {
