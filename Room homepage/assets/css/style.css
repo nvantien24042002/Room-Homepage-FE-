@@ -1,0 +1,60 @@
+/* reset css */
+* ,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--font);
+    color: var(--white);
+    line-height: var(--lineheight-wide);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    transition:all 0.4s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- HEADER --- */
+/* HEADER - MOBILE FIRST */
+
+.site-header {
+    width: 100%;
+    background-color: var(--orange);
+    position: relative;
+    z-index: 999;
+}
+.site-header__inner {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-inline: var(--space-200);
+    justify-content: center;
+    padding-block: var(--space-300);
+}
+
+.site-header__hamburger,
+.site-header__close {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.site-header__hamburger {
+    position: absolute;
+    left: var(--space-200);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.site-header__logo {
+    display: flex;
+    align-items: center;
+}
+/* Navigation - mobile default hidden */
+
+.site-header__nav {
+    display: none;
+}

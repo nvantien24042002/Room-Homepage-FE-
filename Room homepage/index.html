@@ -6,29 +6,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/main.js" defer></script>
     <title>Room</title>
 </head>
 <body>
     <header class="site-header">
-        <div class="left-group">
-            <div class="hamburger hidden-desktop">
-                <img src="assets/images/hambuger.svg" alt="">
-            </div>
-            <div class="logo">
-                <img src="assets/images/logo.svg" alt="">
-            </div>
-        </div>
-        <nav class="nav-links">
-            <ul>
-                <li>Home</li>
-                <li>Shop</li>
-                <li>About</li>
-                <li>Contact</li>
+    <div class="site-header__inner">
+
+        <button 
+            class="site-header__hamburger"
+            type="button"
+            aria-label="Open navigation"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+        >
+            <img src="assets/images/hambuger.svg" alt="">
+        </button>
+
+        <a href="#" class="site-header__logo" aria-label="Room homepage">
+            <img src="assets/images/logo.svg" alt="Room">
+        </a>
+
+        <nav class="site-header__nav" id="primary-navigation" aria-label="Primary navigation">
+            <button 
+                class="site-header__close"
+                type="button"
+                aria-label="Close navigation"
+            >
+                <img src="assets/images/close.svg" alt="">
+            </button>
+
+            <ul class="site-header__links">
+                <li class="site-header__item">
+                    <a href="#home" class="site-header__link">Home</a>
+                </li>
+
+                <li class="site-header__item">
+                    <a href="#shop" class="site-header__link">Shop</a>
+                </li>
+
+                <li class="site-header__item">
+                    <a href="#about" class="site-header__link">About</a>
+                </li>
+
+                <li class="site-header__item">
+                    <a href="#contact" class="site-header__link">Contact</a>
+                </li>
             </ul>
         </nav>
-    </header>
+
+    </div>
+</header>
 </body>
 </html>
