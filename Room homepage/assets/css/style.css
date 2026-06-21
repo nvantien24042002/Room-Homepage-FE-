@@ -70,7 +70,8 @@ ul {
 }
 .site-header.is-open .site-header__hamburger,
 .site-header.is-open .site-header__logo {
-    display: none;
+    /* display: none; */
+    visibility: hidden;
 }
 /* menu links */
 .site-header__links {
