@@ -64,3 +64,15 @@ button.site-header__close {
 .site-header__logo img {
     display: block;
 }
+.site-header.is-open .site-header__nav {
+    display: flex;
+}
+.site-header.is-open .site-header__hamburger {
+    visibility: hidden;
+}
+.site-header.is-open .site-header__logo {
+    visibility: hidden;
+}
+.site-header__links {
+    display: flex;
+}
