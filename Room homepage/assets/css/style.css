@@ -32,12 +32,23 @@ img {
 /* HEADER */
 header.site-header {
     background-color:orange;
+    position: relative;
+    width: 100%;
+    z-index: 999;
 }
 .site-header__inner {
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items:center;
-    padding:48px 32px
+    position: relative;
+    padding-block: var(--space-300);
+    padding-inline: var(--space-200);
+}
+.site-header__hamburger {
+    position: absolute;
+    left: var(--space-200);
+    top: 50%;
+    transform: translateY(-50%);
 }
 .site-header__nav{
     display:none;
@@ -47,4 +58,9 @@ button.site-header__close {
     border:none;
     background:transparent;
     cursor:pointer;
+}
+.site-header__hamburger img,
+.site-header__close img,
+.site-header__logo img {
+    display: block;
 }
