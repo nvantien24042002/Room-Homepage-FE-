@@ -29,3 +29,22 @@ img {
     display: block;
     max-width: 100%;
 }
+/* HEADER */
+header.site-header {
+    background-color:orange;
+}
+.site-header__inner {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:48px 32px
+}
+.site-header__nav{
+    display:none;
+}
+button.site-header__hamburger,
+button.site-header__close {
+    border:none;
+    background:transparent;
+    cursor:pointer;
+}
