@@ -75,6 +75,7 @@ function renderSlide() {
     aboutImage.alt = currentSlide.alt; // Đổi ALt
     aboutTitle.textContent = currentSlide.title; //Đổi title của ảnh
     aboutText.textContent = currentSlide.text; //Đổi paragraph của ảnh
+    updateSlideButtons();
 }
 function goNextSlide() {
     //Nếu đang ở slider cuối rồi thì return 
@@ -98,6 +99,10 @@ function getSlideImage(slide){
         return slide.image.desktop;
     }
     return slide.image.mobile
+}
+function updateSlideButtons() {
+    previousSlideButton.disabled = currentSlideIndex === 0;
+    nextSlideButton.disabled = currentSlideIndex === slides.length - 1;
 }
 nextSlideButton.addEventListener("click", goNextSlide);
 previousSlideButton.addEventListener("click", goPreviousSlide);
