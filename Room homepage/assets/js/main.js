@@ -51,29 +51,26 @@ const slides = [
         alt: "Minimalist black chair with soft lighting"
     }
 ];
-let currentSlideIndex = 0;
+let currentSlideIndex = 0; //Đang ở slider dầu tiên
 function renderSlide() {
-    const currentSlide = slides[currentSlideIndex];
-
-    aboutImage.src = currentSlide.image;
-    aboutImage.alt = currentSlide.alt;
-
-    aboutTitle.textContent = currentSlide.title;
-    aboutText.textContent = currentSlide.text;
+    const currentSlide = slides[currentSlideIndex]; //Lấy slider hiện tại
+    aboutImage.src = currentSlide.image; // Đổi ảnh
+    aboutImage.alt = currentSlide.alt; // Đổi ALt
+    aboutTitle.textContent = currentSlide.title; //Đổi title của ảnh
+    aboutText.textContent = currentSlide.text; //Đổi paragraph của ảnh
 }
 function goNextSlide() {
+    //Nếu đang ở slider cuối rồi thì return 
     if (currentSlideIndex === slides.length - 1) {
         return;
     }
-
-    currentSlideIndex++;
-    renderSlide();
+    currentSlideIndex++; // slider + 1
+    renderSlide(); //Cập nhật giao diện
 }
 function goPreviousSlide() {
     if (currentSlideIndex === 0) {
         return;
     }
-
     currentSlideIndex--;
     renderSlide();
 }
