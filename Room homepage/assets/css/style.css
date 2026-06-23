@@ -108,7 +108,6 @@ button.site-header__close {
 .about-wrapper {
     display: flex;
     flex-direction: column;
-
 }
 .about__media {
     position: relative;
@@ -139,7 +138,7 @@ button.site-header__close {
 }
 .about-content-wrapper {
     padding-block: var(--space-800);
-    padding-inline: var(--space-400);
+    padding-inline: var(--space-800);
 }
 .about-content {
     display: flex;
@@ -206,5 +205,37 @@ button.site-header__close {
 
     .site-header__link {
         color: var(--white);
+    }
+    .about-wrapper {
+        flex-direction: row;
+    }
+
+    .about__media {
+        flex: 0 0 60%;
+    }
+
+    .about__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .slider {
+        right: 0;
+        bottom: 0;
+        transform: translateX(100%);
+    }
+
+    .about-content-wrapper {
+        flex: 1;
+        padding-block: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .about-content {
+        max-width: 400px;
     }
 }
