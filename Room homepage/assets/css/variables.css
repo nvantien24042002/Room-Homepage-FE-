@@ -1,0 +1,27 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --orange: #e59a34;
+
+    --grey-500: #a0a0a0;
+    --grey-800: #444444;
+    --space-100: 0.5rem;     /* 8px */
+    --space-200: 1rem;       /* 16px */
+    --space-300: 1.5rem;     /* 24px */
+    --space-400: 2rem;       /* 32px */
+    --space-600: 3rem;       /* 48px */
+    --space-700: 3.5rem;     /* 56px */
+    --space-800: 4rem;       /* 64px */
+    --space-1000: 5rem;      /* 80px */
+    --space-1050: 6.25rem;   /* 100px */
+    --space-1375: 6.875rem;  /* 110px */
+
+    --font: 'League Spartan', sans-serif;
+
+    --text-sm: 0.9375rem; /* 15px */
+    --text-md: 1rem;      /* 16px */
+    --text-lg: 2.5rem;    /* 40px */
+    --text-xl: 3rem;      /* 48px */
+
+    --lineheight-wide: 1.5;
+}
