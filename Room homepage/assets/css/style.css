@@ -102,3 +102,40 @@ button.site-header__close {
     text-decoration: none;
     text-transform: lowercase;
 }
+
+@media (min-width:1024px) {
+    .hidden-desktop {
+        display: none;
+    }
+    .site-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .site-header__inner {
+        justify-content: flex-start;
+        gap: var(--space-700);
+        padding-block: var(--space-300);
+        padding-inline: var(--space-200);
+    }
+    .site-header__logo {
+        visibility: visible;
+    }
+    .site-header__nav {
+        position: static;
+        inset: auto;
+        display: block;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .site-header__links {
+        display: flex;
+        align-items: center;
+        gap: var(--space-400);
+    }
+
+    .site-header__link {
+        color: var(--white);
+    }
+}
