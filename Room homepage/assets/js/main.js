@@ -52,32 +52,38 @@ console.log(aboutTitle)
 const aboutText = document.querySelector(".about-content__text");
 console.log(aboutText)
 
-let currentSlideIndex = 0;
+let currentSliderIndex = 0;
 /*
 Slide 1 → index 0
 Slide 2 → index 1
 Slide 3 → index 2
 */
 function renderSlider() {
-    const currentSlider = slides[currentSlideIndex];
+    const currentSlider = slides[currentSliderIndex];
     aboutImage.src = currentSlider.image;
     aboutImage.alt = currentSlider.alt;
     aboutTitle.textContent = currentSlider.title;
     aboutText.textContent = currentSlider.text;
+    updateSlideButtons();
 }
 function goNextSlider(){
-    if(currentSlideIndex < slides.length - 1){
-        currentSlideIndex++;
+    if(currentSliderIndex < slides.length - 1){
+        currentSliderIndex++;
         renderSlider();
     }
 }
 nextSlider.addEventListener("click",goNextSlider);
 console.log(nextSlider);
 function goPreviousSlider(){
-    if (currentSlideIndex > 0) {
-        currentSlideIndex--;
+    if (currentSliderIndex > 0) {
+        currentSliderIndex--;
         renderSlider();
     }
 }
 previousSlider.addEventListener("click",goPreviousSlider);
+function updateSlideButtons(){
+    previousSlider.disabled = currentSliderIndex ===0;
+    nextSlider.disabled = currentSliderIndex === slides.length - 1;
+}
 renderSlider();
+

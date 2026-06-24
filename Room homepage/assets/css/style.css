@@ -156,6 +156,17 @@ button.site-header__close {
     background-color: var(--black);
     cursor: pointer;
 }
+.slider__previous:disabled,
+.slider__next:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+.slider__previous:not(:disabled):hover,
+.slider__next:not(:disabled):hover,
+.slider__previous:not(:disabled):focus-visible,
+.slider__next:not(:disabled):focus-visible {
+    background-color: var(--grey-800);
+}
 .about-content-wrapper {
     padding-block: var(--space-800);
     padding-inline: var(--space-800);
