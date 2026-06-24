@@ -63,7 +63,7 @@ const aboutTitle = document.querySelector(".about-content__title");
 console.log(aboutTitle)
 const aboutText = document.querySelector(".about-content__text");
 console.log(aboutText)
-const desktopMediaQuery = window.matchMedia("(min-width:768px");
+const desktopMediaQuery = window.matchMedia("(min-width:768px)");
 console.log(desktopMediaQuery);
 let currentSliderIndex = 0;
 /*
@@ -106,6 +106,6 @@ function getSlideImage(slide){
     }
     return slide.image.mobile
 }
-desktopMediaQuery.addEventListener("change",renderSlide);
+desktopMediaQuery.addEventListener("change",renderSlider);
 renderSlider();
 
