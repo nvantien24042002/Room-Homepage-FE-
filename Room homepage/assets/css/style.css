@@ -202,6 +202,36 @@ button.site-header__close {
     text-transform: uppercase;
     text-decoration: none;
 }
+.about__furniture-img {
+    display:block;
+    width:100%;
+    height:auto;
+}
+.about__furniture-content {
+    display:flex;
+    flex-direction:column;
+    gap: 16px;
+    padding: 48px 32px;
+}
+
+
+.about__furniture-title {
+    color:black;
+    text-transform:uppercase;
+    font-size:1rem;
+    letter-spacing:5.875px;
+}
+
+.about__furniture-text {
+    color:#a0a0a0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.32px;
+}
+@media (min-width:768px) {
+}
+
 @media (min-width:1024px) {
     .hidden-desktop {
         display: none;
