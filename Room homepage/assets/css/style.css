@@ -230,10 +230,7 @@ button.site-header__close {
     letter-spacing: 0.32px;
 }
 @media (min-width:768px) {
-}
-
-@media (min-width:1024px) {
-    .hidden-desktop {
+        .hidden-desktop {
         display: none;
     }
     .site-header {
@@ -273,6 +270,9 @@ button.site-header__close {
     .site-header__link {
         color: var(--white);
     }
+}
+
+@media (min-width:1024px) {
     .about-wrapper {
         flex-direction: row;
     }
