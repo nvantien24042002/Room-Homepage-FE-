@@ -59,9 +59,25 @@ Slide 2 → index 1
 Slide 3 → index 2
 */
 function renderSlider() {
-    const currentSlide = slides[currentSlideIndex];
+    const currentSlider = slides[currentSlideIndex];
     aboutImage.src = currentSlider.image;
     aboutImage.alt = currentSlider.alt;
     aboutTitle.textContent = currentSlider.title;
     aboutText.textContent = currentSlider.text;
 }
+function goNextSlider(){
+    if(currentSlideIndex < slides.length - 1){
+        currentSlideIndex++;
+        renderSlider();
+    }
+}
+nextSlider.addEventListener("click",goNextSlider);
+console.log(nextSlider);
+function goPreviousSlider(){
+    if (currentSlideIndex > 0) {
+        currentSlideIndex--;
+        renderSlider();
+    }
+}
+previousSlider.addEventListener("click",goPreviousSlider);
+renderSlider();
